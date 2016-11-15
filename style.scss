@@ -1,0 +1,135 @@
+
+body {
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family:'Julius Sans One', sans-serif;
+}
+
+.game {
+	text-align: center;
+	color: #fff;
+  height: 100vh;
+  @media (min-width: 400px) {
+    font-size: 2em;
+  	width: 100vw;
+  }
+}
+
+.howMany {
+  font-size: 3em;
+  margin-top: 55%;
+  @media (min-width: 700px) {
+    margin-top: 35%;
+  }
+    @media (min-width: 1000px) {
+      margin-top: 15%;
+    }
+}
+
+.selection {
+  display: inline-block;
+  font-size: 2.2em;
+  margin-right: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.or {
+  @extend .howMany;
+}
+
+.pieceSelect {
+	display: none;
+}
+
+.gameBoard {
+	display: none;
+  margin-top: 20%;
+  @media (min-width: 635px) {
+    margin-top: 10%;
+  }
+  @media (min-width: 1000px) {
+    margin-top: 0%;
+  }
+}
+
+.cell {
+  border: solid 2.5px #000;
+  color: #000;
+  font-size: 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  /*Welcome to media query hell*/
+  @media (min-width: 400px) {
+    font-size: 3em;
+    height: 125px;
+    width: 125px;
+  }
+    @media (min-width: 535px) {
+      height: 150px;
+      width: 150px;
+    }
+      @media(min-width: 635px) {
+        height: 200px;
+        width: 200px;
+      }
+        @media (min-width: 835px) {
+          font-size: 5em;
+        	height: 250px;
+        	width: 250px;
+        }
+          @media (min-width: 1035px) {
+            font-size: 5em;
+            height: 300px;
+            width: 300px;
+          }
+            @media (min-width: 1235px) {
+              height: 350px;
+              width: 350px;
+            }
+              @media (min-width: 1335px) {
+                height: 250px;
+                width: 400px;
+              }
+}
+
+.cellItem {
+	display: inline-block;
+	color: #000;
+	padding-top: none;
+	margin: 0;
+}
+
+.gameEndState {
+  font-size: 2.5em;
+}
+
+.winner1 {
+	display: none;
+  margin-top: 25%;
+  @media (min-width: 1035px) {
+      margin-top: 5%;
+  }
+}
+
+.winner2 {
+	@extend .winner1;
+}
+
+.draw {
+	@extend .winner1;
+}
+
+.aiWinner {
+	@extend .winner1;
+}
+
+.new {
+	@extend .winner1;
+}
