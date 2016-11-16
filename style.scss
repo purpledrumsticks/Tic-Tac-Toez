@@ -58,7 +58,7 @@ body {
 .cell {
   border: solid 2.5px #000;
   color: #000;
-  font-size: 2.5em;
+  font-size: 4em;
   display: inline-block;
   cursor: pointer;
   border-radius: 16px;
@@ -66,8 +66,8 @@ body {
   height: 100px;
   width: 100px;
   /*Welcome to media query hell*/
-  @media (min-width: 400px) {
-    font-size: 3em;
+  @media (min-width: 410px) {
+    font-size: 4em;
     height: 125px;
     width: 125px;
   }
@@ -76,20 +76,21 @@ body {
       width: 150px;
     }
       @media(min-width: 635px) {
+        font-size: 5em;
         height: 200px;
         width: 200px;
       }
         @media (min-width: 835px) {
-          font-size: 5em;
         	height: 250px;
         	width: 250px;
         }
           @media (min-width: 1035px) {
-            font-size: 5em;
+            font-size: 7.5em;
             height: 300px;
             width: 300px;
           }
             @media (min-width: 1235px) {
+              font-size: 8em;
               height: 350px;
               width: 350px;
             }
